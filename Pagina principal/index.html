@@ -15,13 +15,16 @@ imagenes si
 tablas con filas y columnas mas grandes que otras si
 b,strike,i,pre  si
 parrafos,acronym 
-fieldset(legend...)
+fieldset(legend...) Si
 todo tipos de enlaces, tanto internos (en el principio tengo que ponerlo) como externos (si),de documentos y enlaces en imagenes
-listas ordenadas y desordenadas// tb dl,dd y dt
-formularios con todos los input(pagina de registro)
+listas ordenadas y desordenadas// tb dl,dd y dt SI
+formularios con todos los input(pagina de registro) Si
  -->
- <img src="img/madrid.png" alt="Foto del escudo del Real Madrid" height="80px" width="100px">
-<h1>REAL MADRID</h1>
+ <header>
+    <img src="img/madrid.png" alt="Foto del escudo del Real Madrid" height="80px" width="100px">
+    <h1 class="title">REAL MADRID</h1>
+
+ </header>
 <h2>Historia del mejor equipo del mundo</h2>
 <p>
     <aside>
@@ -134,21 +137,88 @@ formularios con todos los input(pagina de registro)
 <h1>Trofeos del Real Madrid</h1>
 <fieldset>
 <legend>Títulos</legend>
-    <fieldset class="liga">
+    <fieldset class="container">
         <legend>Ligas</legend>
-        <img src="img/liga.png" alt="Copa de la liga" width="200px" height="275px">
+        <img src="img/liga-removebg-preview.png" alt="Trofeo Copa de la liga" width="200px" height="275px">
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <div class="letras">   
             <h4>Ligas</h4>
             <h4 class="azul">35</h4>
         </div>
     </fieldset>
+    <fieldset class="container">
+        <legend>Copa del Rey</legend>
+        <img src="img/copa-rey-removebg-preview.png" alt="Trofeo Copa del Rey" width="200px" height="275px">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="letras">
+            <h4>Copa del Rey</h4>
+            <h4 class="azul">19</h4>
+        </div>
+    </fieldset>
+    <fieldset class="container">
+        <legend>Supercopa España</legend>
+        <img src="img/supercopa-removebg-preview.png" alt="Trofeo Supercopa España" width="200px" height="275px">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="letras">
+            <h4>Supercopa España</h4>
+            <h4 class="azul">12</h4>
+        </div>
+    </fieldset>
+    <fieldset class="container">
+        <legend>Copa del Rey</legend>
+        <img src="img/super-europa-removebg-preview.png" alt="Trofeo Supercopa de Europa" width="200px" height="275px">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="letras">
+            <h4>Supercopa de Europa</h4>
+            <h4 class="azul">5</h4>
+        </div>
+    </fieldset>
+    <fieldset class="container">
+        <legend>Champions</legend>
+        <img src="img/champions-removebg-preview.png" alt="Trofeo de la Champions" width="200px" height="275px">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="letras">
+            <h4>Champions</h4>
+            <h4 class="azul">14</h4>
+        </div>
+    </fieldset>
 </fieldset>
+ <div class="container__botones">
+    <a class="cambio" href="index.html">1</a>
+    <a class="cambio" href="../Pagina 2/index.html">2</a>
+    <a class="cambio" href="../Pagina 3/index.html">3</a>
+</div> 
+
+<footer>
+    <div class="container__copy">
+        <p class="copy"> &#9400 Copyright</p>
+    </div>
+
+</footer>
+
 <!-- Hacer el fieldset con todos los titulos que ha ganado el madrid y
  mirar si se puede poner una seleccion con los inputs para que al darle a uno te lleve al video de la final o te descargue el video -->
 <style>
     body{
         background-color: #FFF;
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        background-color: #E7E7E7;
+        width: 100%;
+        height: 7em;
+        overflow: hidden;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    header > img{
+        justify-content: center;
+    }
+    header > .title{
+        text-align: center;
+        color: #000;
     }
     h1{
         text-align: center;
@@ -168,12 +238,14 @@ formularios con todos los input(pagina de registro)
         text-align: center;
         font-size: 1.2em;
     }
-    .liga{
+    .container{
         max-width: 225px;
         max-height: 500px;
-        margin-left: 1.5em;
+        display: inline-block;
+        margin: 1.5em 1.5em 1.5em 1.5em;
+   
     }
-    img, .liga{
+    img, .container{
         align-items: center;
         margin-left: 1em;
     }
@@ -185,9 +257,30 @@ formularios con todos los input(pagina de registro)
         font-size: 2em;
         margin-top: 0.5em;
     }
+     .container__botones{
+        display: flex;
+        justify-content: center;
+    }
+    .cambio{
+        border: 1px solid #000;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top: 3em;
+    } 
 
+    footer{
+        background-color: #B7B7B7;
+        height: 15em;
+        margin-top: 3em;
+    }
+    .container__copy{
+        display: flex;
+        justify-content: center;
+    }
 
-
+    .copy{
+        margin-top: 100px;
+    }
 </style>
 </body>
 </html>
