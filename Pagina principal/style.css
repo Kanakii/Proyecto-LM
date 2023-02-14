@@ -1,0 +1,90 @@
+body{
+    background-color: #FFF;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #E7E7E7;
+    width: 100%;
+    height: 7em;
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+header > img{
+    justify-content: center;
+}
+header > .title{
+    text-align: center;
+    color: #000;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+ img{
+    float: left;
+
+} 
+
+aside{
+    float: right;
+}
+legend{
+    text-align: center;
+    font-size: 1.2em;
+}
+.container{
+    max-width: 225px;
+    max-height: 500px;
+    display: inline-block;
+    margin: 1.5em 1.5em 1.5em 1.5em;
+
+}
+img, .container{
+    align-items: center;
+    margin-left: 1em;
+}
+.letras{
+    text-align: center;
+}
+.azul{
+    color: #00D1D5;
+    font-size: 2em;
+    margin-top: 0.5em;
+}
+ .container__botones{
+    display: flex;
+    justify-content: center;
+}
+div a {
+    text-decoration: none;
+}
+.cambio{
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 3em;
+} 
+
+footer{
+    background-color: #B7B7B7;
+    height: 15em;
+    margin-top: 3em;
+}
+.container__copy{
+    display: flex;
+    justify-content: center;
+}
+
+.copy{
+    margin-top: 100px;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3em;
+}
